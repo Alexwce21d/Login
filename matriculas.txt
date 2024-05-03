@@ -1,0 +1,2 @@
+Alex,12345,Rosa,1234,18,primer
+Johel,124565,Melisa,123455,14,cuarto grado

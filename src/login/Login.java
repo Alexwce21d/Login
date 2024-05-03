@@ -109,18 +109,18 @@ public class Login extends javax.swing.JFrame {
     
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-         String username = txtUsuariooEmail.getText();
-    String password = new String(txtPassContraseña.getPassword());
-    if (userService.authenticate(username, password)) {
-        // Autenticación exitosa, mostrar mensaje de bienvenida
-        JOptionPane.showMessageDialog(this, "Bienvenido " + username + "!", "Autenticación exitosa", JOptionPane.INFORMATION_MESSAGE);
-        // Cerrar la ventana de login y mostrar la ventana principal
-        this.dispose();
-        new MainWindow().setVisible(true);
-    } else {
-        // Autenticación fallida, mostrar mensaje de error
-        JOptionPane.showMessageDialog(this, "Usuario o contraseña incorrectos", "Error de autenticación", JOptionPane.ERROR_MESSAGE);
-    }
+        String username = txtUsuariooEmail.getText();
+        String password = new String(txtPassContraseña.getPassword());
+        if (userService.authenticate(username, password)) {
+            // Autenticación exitosa, mostrar mensaje de bienvenida
+            JOptionPane.showMessageDialog(this, "Bienvenido " + username + "!", "Autenticación exitosa", JOptionPane.INFORMATION_MESSAGE);
+            // Cerrar la ventana de login y mostrar la ventana principal
+            this.dispose();
+            new MainWindow().setVisible(true);
+        } else {
+            // Autenticación fallida, mostrar mensaje de error
+            JOptionPane.showMessageDialog(this, "Usuario o contraseña incorrectos", "Error de autenticación", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterActionPerformed
